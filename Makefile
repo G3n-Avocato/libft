@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC	= gcc
+CC	= clang
 
 CFLAGS	= -Wall -Wextra -Werror
 
@@ -52,6 +52,10 @@ SRCS	= ft_bzero.c \
 	  ft_putstr_fd.c \
 	  ft_putendl_fd.c \
 	  ft_putnbr_fd.c \
+	  ft_printf.c \
+	  ft_printf_utils.c \
+	  get_next_line.c \
+	  get_next_line_utils.c
 
 SRCS_BONUS = ft_lstnew_bonus.c \
 	  ft_lstadd_front_bonus.c \

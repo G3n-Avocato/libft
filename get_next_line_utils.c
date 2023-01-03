@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lamasson <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/27 12:18:48 by lamasson          #+#    #+#             */
-/*   Updated: 2022/10/01 12:30:02 by lamasson         ###   ########.fr       */
+/*   Created: 2022/11/17 16:42:19 by lamasson          #+#    #+#             */
+/*   Updated: 2022/11/18 14:53:27 by lamasson         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_check(char *str)
 {
-	size_t	i;
+	int		i;
+	char	c;
 
 	i = 0;
-	while (s && s[i] != '\0')
+	c = '\n';
+	if (!str)
+		return (0);
+	while (str[i] != c)
+	{
+		if (str[i] == '\0')
+			return (0);
 		i++;
-	return (i);
+	}
+	return (i + 1);
 }
