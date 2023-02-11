@@ -6,7 +6,7 @@
 /*   By: lamasson <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 21:58:06 by lamasson          #+#    #+#             */
-/*   Updated: 2022/10/09 19:03:04 by lamasson         ###   ########.fr       */
+/*   Updated: 2023/02/11 14:50:19 by lamasson         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 # define LIBFT_H
 
 # ifndef BUFFER_SIZE
-#	define BUFFER_SIZE 16
+#  define BUFFER_SIZE 16
 # endif
+
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
@@ -78,5 +79,7 @@ int		ft_printf(const char *str, ...);
 
 int		ft_check(char *str);
 char	*get_next_line(int fd);
+
+void	ft_free_tab(char **tab);
 
 #endif

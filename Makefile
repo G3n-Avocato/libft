@@ -6,7 +6,7 @@
 #    By: lamasson <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/28 20:59:05 by lamasson          #+#    #+#              #
-#    Updated: 2022/10/12 12:46:22 by lamasson         ###   ########.fr        #
+#    Updated: 2023/02/09 15:55:07 by lamasson         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,8 @@ SRCS	= ft_bzero.c \
 	  ft_printf.c \
 	  ft_printf_utils.c \
 	  get_next_line.c \
-	  get_next_line_utils.c
+	  get_next_line_utils.c \
+	  ft_free_tab.c
 
 SRCS_BONUS = ft_lstnew_bonus.c \
 	  ft_lstadd_front_bonus.c \
